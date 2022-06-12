@@ -1,0 +1,4 @@
+aws-web-app-deployment/.terraform/
+aws-web-app-deployment/terraform.tfstate
+aws-web-app-deployment/terraform.tfstate.backup
+aws-web-app-deployment/.terraform.lock.hcl

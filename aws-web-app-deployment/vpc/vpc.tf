@@ -12,6 +12,9 @@ resource "aws_vpc" "threetier-vpc" {
   )
   #https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/resource-tagging#ignoring-changes-in-individual-resources
 
+  lifecycle {
+    ignore_changes = [tags["Created_At"]]
+  }
   # lifecycle {
   #   ignore_changes = [tags]
   # }
